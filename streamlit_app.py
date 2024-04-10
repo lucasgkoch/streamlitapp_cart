@@ -5,12 +5,13 @@ import numpy as np
 # Configurar el ancho total de la página
 st.set_page_config(layout="wide")
 
-# Subtítulo
-st.markdown("<h2 style='text-align: center;'>Ingrese los detalles del cliente</h2>", unsafe_allow_html=True)
-
 
 # Interfaz de usuario de la aplicación
 st.title('Predicción de Abandono de Carrito')
+
+# Subtítulo
+st.markdown("<h2 style='text-align: center;'>Ingrese los detalles de la sesión que desea predecir</h2>", unsafe_allow_html=True)
+
 
 column1, column2, column3 = st.columns(3)
 
@@ -29,6 +30,8 @@ with column3:
     inicios_pago = st.number_input('Nro_Pago_Iniciado', min_value=0, step=1)
     tipo_cliente = st.selectbox('Tipo_De_Cliente', [0, 1, 2])
 
+# Centrar el botón
+st.markdown("<h2 style='text-align: center;'>Predecir Abandono de Carrito</h2>", unsafe_allow_html=True)
 
 if st.button('Predecir'):
     st.write('La probabilidad de que el cliente abandone el carrito es: X.XX')
