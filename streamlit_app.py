@@ -7,7 +7,7 @@ import numpy as np
 # Interfaz de usuario de la aplicación
 st.title('Predicción de Abandono de Carrito')
 
-detalles_producto = st.checkbox('Detalles del producto vistos (0 o 1)')
+detalles_producto = st.checkbox('Detalles del producto vistos')
 paginas_cambiadas = st.number_input('Cantidad de veces que el cliente cambia de página', min_value=0, step=1)
 articulos_carrito = st.number_input('Cantidad de artículos en el carrito', min_value=0, step=1)
 articulos_eliminados = st.number_input('Cantidad de artículos eliminados del carrito', min_value=0, step=1)
