@@ -31,7 +31,7 @@ with column3:
     tipo_cliente = st.selectbox('Tipo_De_Cliente', [0, 1, 2])
 
 # Centrar el botón
-st.markdown("<h2 style='text-align: center;'>Predecir Abandono de Carrito</h2>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'></h1>", unsafe_allow_html=True)
 
 if st.button('Predecir'):
     st.write('La probabilidad de que el cliente abandone el carrito es: X.XX')
