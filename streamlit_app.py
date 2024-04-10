@@ -10,7 +10,7 @@ st.set_page_config(layout="wide")
 st.title('Predicción de Abandono de Carrito')
 
 # Subtítulo
-st.markdown("<h2 style='text-align: center;'>Ingrese los detalles de la sesión que desea predecir</h2>", unsafe_allow_html=True)
+st.markdown("<h3>Ingrese los detalles de la sesión que desea predecir</h3>", unsafe_allow_html=True)
 
 
 column1, column2, column3 = st.columns(3)
