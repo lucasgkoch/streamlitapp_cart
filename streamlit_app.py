@@ -2,7 +2,8 @@ import streamlit as st
 import pickle
 import numpy as np
 
-
+# Configurar el ancho total de la página
+st.set_page_config(layout="wide")
 
 # Interfaz de usuario de la aplicación
 st.title('Predicción de Abandono de Carrito')
