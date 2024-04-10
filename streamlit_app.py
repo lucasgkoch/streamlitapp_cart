@@ -5,6 +5,10 @@ import numpy as np
 # Configurar el ancho total de la página
 st.set_page_config(layout="wide")
 
+# Subtítulo
+st.markdown("<h2 style='text-align: center;'>Ingrese los detalles del cliente</h2>", unsafe_allow_html=True)
+
+
 # Interfaz de usuario de la aplicación
 st.title('Predicción de Abandono de Carrito')
 
