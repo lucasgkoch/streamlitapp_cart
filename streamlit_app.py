@@ -30,8 +30,6 @@ with column3:
     inicios_pago = st.number_input('Nro_Pago_Iniciado', min_value=0, step=1)
     tipo_cliente = st.selectbox('Tipo_De_Cliente', [0, 1, 2])
 
-# Centrar el botón
-st.markdown("<h1 style='text-align: center;'></h1>", unsafe_allow_html=True)
 
 if st.button('Predecir'):
     st.write('La probabilidad de que el cliente abandone el carrito es: X.XX')
