@@ -7,7 +7,7 @@ st.set_page_config(layout="wide")
 
 
 # Interfaz de usuario de la aplicación
-st.title('Predicción de Abandono de Carrito')
+st.title('Prueba cambio de titulo')
 
 # Subtítulo
 st.markdown("<h3>Ingrese los detalles de la sesión que desea predecir</h3>", unsafe_allow_html=True)
