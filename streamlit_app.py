@@ -13,7 +13,7 @@ with open(modelo_path, 'rb') as archivo:
 # Función para predecir la probabilidad de abandono del carrito
 def predecir_abandono_carrito(datos_cliente):
     X_cliente = np.array(datos_cliente).reshape(1, -1)
-    probabilidad_abandono = modelo.predict_proba(X_cliente)[:, 1]
+    probabilidad_abandono = modelo.predict(X_cliente)[:, 1]
     return probabilidad_abandono[0]
 
 
