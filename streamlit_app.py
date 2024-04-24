@@ -5,34 +5,7 @@ import numpy as np
 # Configurar el ancho total de la página
 st.set_page_config(layout="wide")
 
-# Agrega el CSS personalizado
-# Agrega el CSS personalizado
-st.markdown(
-    """
-    <style>
-    /* Cambiar el color de fondo */
-    body {
-        background-color: #171821;
-    }
-    
-    /* Cambiar el color del texto */
-    body, .stText, .css-vunhj7 {
-        color: #FFFFFF;
-    }
-    
-    /* Cambiar el color de los campos */
-    .stTextInput>div>div>input, .stNumberInput>div>div>input, .stSelectbox>div>div>div[role="button"], .stMultiselect>div>div>div[role="button"], .stTextArea>div>div>textarea {
-        background-color: #21222D;
-    }
-    
-    /* Cambiar el color del acento */
-    .stButton>button, .stButton>div>div>button, .css-1cv8vh1 {
-        background-color: #A9DFD8;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+
 
 
 
