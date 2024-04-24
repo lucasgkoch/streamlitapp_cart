@@ -22,7 +22,7 @@ def predecir_abandono_carrito(datos_cliente):
 
 
 # Interfaz de usuario de la aplicación
-st.title('Prueba cambio de titulo')
+st.title('Atrapa carritos')
 
 # Subtítulo
 st.markdown("<h3>Ingrese los detalles de la sesión que desea predecir</h3>", unsafe_allow_html=True)
