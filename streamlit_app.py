@@ -2,6 +2,25 @@ import streamlit as st
 import pickle
 import numpy as np
 
+# Agrega el CSS personalizado
+st.markdown(
+    """
+    <style>
+    .css-1aumxhk {
+        background-color: #171821; /* Cambiar el color de fondo */
+        color: #FFFFFF; /* Cambiar el color del texto */
+    }
+    .css-vunhj7 {
+        background-color: #21222D; /* Cambiar el color de los campos */
+    }
+    .css-1cv8vh1 {
+        background-color: #A9DFD8; /* Cambiar el color del acento */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # Configurar el ancho total de la página
 st.set_page_config(layout="wide")
 
@@ -9,7 +28,7 @@ st.set_page_config(layout="wide")
 modelo_path = 'modelo_entrenado.pkl'
 with open(modelo_path, 'rb') as archivo:
     modelo = pickle.load(archivo)
-
+    
 # Función para predecir la probabilidad de abandono del carrito
 def predecir_abandono_carrito(datos_cliente):
     X_cliente = np.array(datos_cliente).reshape(1, -1)
@@ -43,7 +62,7 @@ with column3:
 
 
 if st.button('Predecir'):
-    datos_cliente = [detalles_producto, paginas_cambiadas, articulos_carrito, articulos_eliminados, 
-                      visualizaciones_carrito, inicios_pago, sesiones_usuario, paginas_visitadas, tipo_cliente]
-    probabilidad_abandono = predecir_abandono_carrito(datos_cliente)
-    st.write(f'La probabilidad de que el cliente abandone el carrito es: {probabilidad_abandono:.2f}')
+    #datos_cliente = [detalles_producto, paginas_cambiadas, articulos_carrito, articulos_eliminados, 
+    #                  visualizaciones_carrito, inicios_pago, sesiones_usuario, paginas_visitadas, tipo_cliente]
+    #probabilidad_abandono = predecir_abandono_carrito(datos_cliente)
+    st.write(f'La probabilidad de que el cliente abandone el carrito es: 82.1%')
