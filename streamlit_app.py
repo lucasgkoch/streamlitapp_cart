@@ -2,6 +2,9 @@ import streamlit as st
 import pickle
 import numpy as np
 
+# Configurar el ancho total de la página
+st.set_page_config(layout="wide")
+
 # Agrega el CSS personalizado
 st.markdown(
     """
@@ -21,8 +24,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Configurar el ancho total de la página
-st.set_page_config(layout="wide")
+
 
 # Cargar el modelo entrenado
 modelo_path = 'modelo_entrenado.pkl'
