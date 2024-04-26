@@ -31,19 +31,19 @@ st.markdown("<h3>Ingrese los detalles de la sesión que desea predecir</h3>", un
 column1, column2, column3 = st.columns(3)
 
 with column1:
-    detalles_producto = st.selectbox('Detalles_Del_Producto_Vistos', [0, 1])
-    articulos_eliminados = st.number_input('Nro_Articulos_Eliminados_Del_Carrito', min_value=0, step=1)
-    sesiones_usuario = st.number_input('Nro_Inicios_Sesion', min_value=0, step=1)
+    detalles_producto = st.selectbox('Detalles de productos vistos', [0, 1])
+    articulos_eliminados = st.number_input('Nro de articulos eliminados del carrito', min_value=0, step=1)
+    sesiones_usuario = st.number_input('Nro de inicios de sesión', min_value=0, step=1)
 
 with column2:
-    paginas_cambiadas = st.number_input('Nro_Visualizaciones_Articulos__Carrito', min_value=0, step=1)
-    visualizaciones_carrito = st.number_input('Nro_Visualizaciones_Del_Carrito', min_value=0, step=1)
-    paginas_visitadas = st.number_input('Nro_Paginas_VistaS', min_value=1, step=1)
+    paginas_cambiadas = st.number_input('Nro de visualizaciones a artículos del carrito', min_value=0, step=1)
+    visualizaciones_carrito = st.number_input('Nro de visualizaciones del carrito', min_value=0, step=1)
+    paginas_visitadas = st.number_input('Nro de páginas vistas', min_value=1, step=1)
 
 with column3:
-    articulos_carrito = st.number_input('Nro_Articulos_En_Carrito', min_value=0, step=1)
-    inicios_pago = st.number_input('Nro_Pago_Iniciado', min_value=0, step=1)
-    tipo_cliente = st.selectbox('Tipo_De_Cliente', [0, 1, 2])
+    articulos_carrito = st.number_input('Nro de articulos en el carrito', min_value=0, step=1)
+    inicios_pago = st.number_input('Nro de pagos iniciados', min_value=0, step=1)
+    tipo_cliente = st.selectbox('Tipo de cliente', [0, 1, 2])
 
 
 if st.button('Predecir'):
